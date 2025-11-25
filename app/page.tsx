@@ -20,6 +20,7 @@ import {
   Earth,
   HandHelping,
   Braces,
+  GitPullRequestArrowIcon,
 } from "lucide-react";
 
 import Image from "next/image";
@@ -239,6 +240,15 @@ export default function Home() {
                   className="border-accent/60 hover:border-accent/80 hover:bg-accent/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Galsen DEV Map
+                </LinkButton>
+                <LinkButton
+                  href="https://github.com/GalsenDev221/first.contributions"
+                  icon={
+                    <GitPullRequestArrowIcon className="w-5 h-5 text-primary" />
+                  }
+                  className="border-primary/60 hover:border-primary/80 hover:bg-primary/10 hover:text-foreground hover:scale-[1.03]"
+                >
+                  First Contributions
                 </LinkButton>
               </div>
             </CardContent>
