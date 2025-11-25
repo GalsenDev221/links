@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -18,6 +19,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon/favicon.ico",
     apple: "/favicon/apple-touch-icon.png",
   },
+  openGraph: {
+    images: [
+      {
+        url: "https://res.cloudinary.com/degyjrpjj/image/upload/v1764037205/links/og_share.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +35,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <Script
+          src="https://beamanalytics.b-cdn.net/beam.min.js"
+          data-token={process.env.NEXT_PUBLIC_BEAM_DATA_TOKEN}
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`font-sans ${spaceGrotesk.variable}`}>{children}</body>
     </html>
   );
