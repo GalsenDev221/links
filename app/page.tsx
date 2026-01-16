@@ -223,6 +223,7 @@ export default function Home() {
                 <LinkButton
                   href="https://github.com/GalsenDev221/made.in.senegal"
                   icon={<Code2 className="w-5 h-5 text-primary" />}
+                  description="Une plateforme présentant des outils et des solutions conçus par des développeurs sénégalais pour un public international."
                   className="border-primary/60 hover:border-primary/80 hover:bg-primary/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Made In Senegal
@@ -230,6 +231,7 @@ export default function Home() {
                 <LinkButton
                   href="https://github.com/GalsenDev221/galsen.ui"
                   icon={<Palette className="w-5 h-5 text-accent" />}
+                  description="Galsen UI est une bibliothèque de composants réutilisables basée sur Tailwind (CSS pur bientôt disponible), conçue pour accélérer le développement d'interfaces modernes."
                   className="border-accent/60 hover:border-accent/80 hover:bg-accent/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Galsen UI
@@ -237,6 +239,7 @@ export default function Home() {
                 <LinkButton
                   href="https://github.com/GalsenDev221/map"
                   icon={<Map className="w-5 h-5 text-accent" />}
+                  description="Galsen DEV Map est un projet open source qui vise à cartographier et connecter la communauté tech sénégalaise."
                   className="border-accent/60 hover:border-accent/80 hover:bg-accent/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Galsen DEV Map
@@ -246,6 +249,7 @@ export default function Home() {
                   icon={
                     <GitPullRequestArrowIcon className="w-5 h-5 text-primary" />
                   }
+                  description="Aidez les débutants à contribuer aux projets open source."
                   className="border-primary/60 hover:border-primary/80 hover:bg-primary/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   First Contributions
