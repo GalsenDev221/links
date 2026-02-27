@@ -30,11 +30,11 @@ export function LinkButton({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={description ? "flex items-start sm:items-center gap-3 sm:gap-4" : "flex items-center"}
+        className={description ? "flex items-start gap-3 sm:gap-4" : "flex items-center"}
         aria-label={`${children} (ouvre dans un nouvel onglet)`}
       >
         {icon && (
-          <span className={`flex-shrink-0 ${description ? 'mt-0.5 sm:mt-0' : ''}`} aria-hidden="true">
+          <span className={`flex-shrink-0 ${description ? 'mt-0.5' : ''}`} aria-hidden="true">
             {icon}
           </span>
         )}
@@ -53,7 +53,7 @@ export function LinkButton({
           )}
         </span>
         <ExternalLink
-          className={description ? "w-4 h-4 opacity-50 flex-shrink-0 mt-0.5 sm:mt-1" : "w-4 h-4 opacity-50"}
+          className={description ? "w-4 h-4 opacity-50 flex-shrink-0 mt-0.5" : "w-4 h-4 opacity-50"}
           aria-hidden="true"
         />
       </a>

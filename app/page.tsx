@@ -231,7 +231,7 @@ export default function Home() {
                 <LinkButton
                   href="https://github.com/GalsenDev221/galsen.ui"
                   icon={<Palette className="w-5 h-5 text-accent" />}
-                  description="Galsen UI est une bibliothèque de composants réutilisables basée sur Tailwind (CSS pur bientôt disponible), conçue pour accélérer le développement d'interfaces modernes."
+                  description="Une bibliothèque de composants réutilisables basée sur Tailwind, conçue pour accélérer le développement d'interfaces modernes."
                   className="border-accent/60 hover:border-accent/80 hover:bg-accent/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Galsen UI
@@ -239,7 +239,7 @@ export default function Home() {
                 <LinkButton
                   href="https://github.com/GalsenDev221/map"
                   icon={<Map className="w-5 h-5 text-accent" />}
-                  description="Galsen DEV Map est un projet open source qui vise à cartographier et connecter la communauté tech sénégalaise."
+                  description="Un projet open source qui vise à cartographier et connecter la communauté tech sénégalaise."
                   className="border-accent/60 hover:border-accent/80 hover:bg-accent/10 hover:text-foreground hover:scale-[1.03]"
                 >
                   Galsen DEV Map
