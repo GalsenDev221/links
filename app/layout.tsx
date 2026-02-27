@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import { LanguageProvider } from "@/components/language-provider";
+import { LangToggle } from "@/components/lang-toggle";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -42,7 +44,12 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className={`font-sans ${spaceGrotesk.variable}`}>{children}</body>
+      <body className={`font-sans ${spaceGrotesk.variable}`}>
+        <LanguageProvider>
+          <LangToggle />
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   );
 }
