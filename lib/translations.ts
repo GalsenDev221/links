@@ -1,6 +1,37 @@
 export type Lang = 'fr' | 'en';
 
-export const translations = {
+export interface Translations {
+  header: {
+    description: string;
+  };
+  community: {
+    title: string;
+    discord: string;
+    whatsapp: string;
+  };
+  social: {
+    title: string;
+  };
+  donate: {
+    title: string;
+  };
+  projects: {
+    title: string;
+    madeInSenegal: { description: string };
+    galsenUI: { description: string };
+    map: { description: string };
+    firstContributions: { description: string };
+  };
+  github: {
+    cta: string;
+  };
+  footer: {
+    madeWith: string;
+    rights: string;
+  };
+}
+
+export const translations: Record<Lang, Translations> = {
   fr: {
     header: {
       description:
@@ -85,6 +116,4 @@ export const translations = {
       rights: "© 2025 - All rights reserved",
     },
   },
-} as const;
-
-export type Translations = typeof translations.fr;
+};
