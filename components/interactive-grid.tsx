@@ -74,7 +74,7 @@ export function InteractiveGrid({
   return (
     <svg
       ref={svgRef}
-      className={`absolute inset-0 w-full h-full ${className}`}
+      className={`fixed inset-0 w-full h-full ${className}`}
       style={{ zIndex: -1 }}
     >
       <defs>

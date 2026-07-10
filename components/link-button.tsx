@@ -21,12 +21,12 @@ export function LinkButton({
   className = "",
 }: LinkButtonProps) {
   return (
-    <div className="relative group hover:scale-[1.02] hover:shadow-md transition-all duration-200">
+    <div className="relative group hover:scale-[1.02] transition-transform duration-200">
       <Button
         asChild
         variant={variant}
         size="lg"
-        className={`w-full justify-start ${description ? "gap-3 sm:gap-4 h-auto py-3 sm:py-4" : "gap-3 h-14"} text-left font-medium transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-2 ${className}`}
+        className={`w-full justify-start ${description ? "gap-3 sm:gap-4 h-auto py-3 sm:py-4" : "gap-3 h-14"} text-left font-medium transition-colors duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-2 ${className}`}
       >
         <a
           href={href}

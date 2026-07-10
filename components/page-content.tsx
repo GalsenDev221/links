@@ -64,7 +64,7 @@ export function PageContent() {
 
         <div className="space-y-8">
           {/* Community Buttons */}
-          <Card className="border-2 border-primary/10 shadow-lg animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:100ms]">
+          <Card className="border-primary/10 shadow-sm animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:100ms]">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <House className="w-5 h-5 text-primary" />
@@ -91,7 +91,7 @@ export function PageContent() {
           </Card>
 
           {/* Social Media Links */}
-          <Card className="shadow-lg animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:200ms]">
+          <Card className="shadow-sm animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:200ms]">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Earth className="w-5 h-5 text-primary" />
@@ -145,7 +145,7 @@ export function PageContent() {
           </Card>
 
           {/* Donation Buttons */}
-          <Card className="border-2 border-accent/20 shadow-lg animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:300ms]">
+          <Card className="border-accent/20 shadow-sm animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:300ms]">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <HandHelping className="w-5 h-5 text-[#0096ff]" />
@@ -171,7 +171,7 @@ export function PageContent() {
           </Card>
 
           {/* Projects Section */}
-          <Card className="shadow-lg animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:400ms]">
+          <Card className="shadow-sm animate-in fade-in-0 slide-in-from-bottom-4 duration-700 [animation-fill-mode:both] [animation-delay:400ms]">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Braces className="w-5 h-5 text-primary" />
